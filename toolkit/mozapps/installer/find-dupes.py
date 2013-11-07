@@ -40,9 +40,10 @@ def main():
         import os
         print >>sys.stderr, "Usage: %s directory" % \
                             os.path.basename(sys.argv[0])
-        sys.exit(1)
+#aks
+#        sys.exit(1)
 
-    find_dupes(sys.argv[1])
+#    find_dupes(sys.argv[1])
 
 if __name__ == "__main__":
     main()
