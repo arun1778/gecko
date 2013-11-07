@@ -82,7 +82,13 @@ GonkDisplayJB::GonkDisplayJB()
             HWC_DISPLAY_DPI_X,
             HWC_DISPLAY_NO_ATTRIBUTE
         };
-        mHwc->getDisplayAttributes(mHwc, 0, 0, attrs, values);
+//aks to get display properties
+       uint32_t config = 1;
+       int disp = HWC_DISPLAY_PRIMARY;
+       size_t numConfigs = 1;
+       //err = mHwc->getDisplayConfigs(mHwc, disp, &config, &numConfigs);
+
+        mHwc->getDisplayAttributes(mHwc, disp, config, attrs, values);
 
         mWidth = values[0];
         mHeight = values[1];

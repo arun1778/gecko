@@ -36,7 +36,7 @@ endif
 DISABLED_CSRCS           += \
                 cubeb_opensl.c \
                 $(NULL)
-DEFINES         += -DUSE_OPENSL
+#DEFINES         += -DUSE_OPENSL
 endif
 
 ifeq ($(OS_TARGET),Darwin)

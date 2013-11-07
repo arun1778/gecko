@@ -38,10 +38,11 @@ if CONFIG['OS_TARGET'] == 'WINNT':
         'cubeb_wasapi.cpp'
     ]
 
+#aks
 if CONFIG['OS_TARGET'] == 'Android':
-    CSRCS += [
-        'cubeb_opensl.c',
-    ]
+#    CSRCS += [
+#        'cubeb_opensl.c',
+#    ]
     if CONFIG['MOZ_WIDGET_TOOLKIT'] != 'gonk':
         CSRCS += [
             'cubeb_audiotrack.c',
